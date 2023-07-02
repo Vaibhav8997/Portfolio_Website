@@ -5,8 +5,43 @@ body {
     font-family: 'Merriweather', serif;
 }
 
+header {
+    background-color: #EAF6F6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 15%;
+}
+
+.logo{
+	width: 75px;
+	height: 75px;
+	cursor: pointer;
+}
+
+ul{
+	list-style: none;
+}
+ul li{
+	display: inline-block;
+	padding: 0px 15px;
+}
+ul li a{
+	transition: all 0.3s ease 0s;
+	text-decoration: none;
+	font-size: 20px;
+	font-family: 'Baloo Chettan 2', cursive;
+	color: #0f4c75;
+}
+ul li a.active{
+	color: black;
+}
+ul li a:hover{
+	color: #1b262c;
+}
+
 h1 {
-    margin: 50px auto 0px auto;
+    margin: 0px auto 0px auto;
     font-family: 'Sacramento', cursive;
     font-size: 5.625rem;
     color: #0f4c75;
@@ -31,6 +66,13 @@ hr {
     width: 5%;
     border-color: #3282b8;
     margin: 100px auto;
+}
+
+.mountain {
+	width: 60%;
+	height: 400px;
+	bottom: 0;
+    left: 25%;
 }
 
 #p1 {
@@ -63,7 +105,6 @@ p {
 .top-container {
     background-color: #EAF6F6;
     position: relative;
-    padding-top: 100px;
 }
 
 .middle-container {
@@ -97,7 +138,7 @@ p {
 .top-cloud {
     position: absolute;
     right: 300px;
-    top: 40px;
+    top: 125px;
 }
 .bottom-cloud {
     position: absolute;
@@ -106,7 +147,7 @@ p {
 }
 
 a {
-    color: #11999E;
+    color: blue;
     font-family: 'Montserrat', sans-serif;
     margin: 10px 20px;
     text-decoration: none;
@@ -119,7 +160,7 @@ a:hover {
 .copyright {
     color: #EAF6F6;
     font-size: 0.75rem;
-    padding: 20px 0px;
+    padding: 20px 0px 0px 0px;
 }
 
 .btn {
@@ -164,3 +205,9 @@ a:hover {
     border-radius: 20px;
     text-decoration: none;
  }
+
+ /* Media Queries */
+
+@media (max-width: 900px) {
+    
+}
