@@ -1,81 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Vaibhav Singh</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="img/favicon-32x32.png">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Sacramento&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vaibhav Singh | Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta name="description" content="Vaibhav Singh — Full-stack developer (Go, React, JavaScript). View projects, skills, and contact info." />
 
+  <!-- Favicon (optional if you have it) -->
+  <link rel="icon" href="img/favicon-32x32.png" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-      <header>
-        <img class="logo" src="img/profile.png">
-		    <nav>
-          <ul>
-            <li><a class="active" href="index.html">Home</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="https://drive.google.com/file/d/18Yx5YwutjKbiFhdfNIRJ-QXc1mNpiMFI/view" target="_blank">Resume</a></li>
-          </ul>
-        </nav>
-      </header>
-      
-    <div class="top-container">
-        <img class="top-cloud" src="img/cloud.png" alt="cloud-img">
-        <h1>I'm Vaibhav.</h1>
-        <h2 id="p1">a programmer</h2>
-        <img class="bottom-cloud" src="img/cloud.png" alt="cloud-img">
-        <img class="mountain" src="img/mountain.png" alt="mountain-img">
+  <!-- Skip to content for accessibility -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Header / Navbar -->
+  <header class="site-header" aria-label="Primary">
+    <div class="brand">
+      <!-- If you prefer logo image, replace span with <img src="img/profile.png" alt="Vaibhav logo"> -->
+      <span class="logo-text">Vaibhav</span>
+    </div>
+
+    <nav class="navbar" aria-label="Main navigation">
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn" id="themeToggle" aria-label="Toggle dark mode" title="Toggle dark mode">🌙</button>
+      <button class="icon-btn menu-toggle" id="menuToggle" aria-label="Toggle menu" title="Menu">☰</button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" id="home" aria-label="Intro">
+      <h1>Hi, I'm <span>Vaibhav Singh</span></h1>
+      <p class="subtitle">Full-stack Developer • Go • React • JavaScript</p>
+
+      <div class="cta-group">
+        <a class="btn btn-primary" href="#projects">View Projects</a>
+        <a class="btn btn-outline" href="https://drive.google.com/file/d/18Yx5YwutjKbiFhdfNIRJ-QXc1mNpiMFI/view" target="_blank" rel="noopener noreferrer">Download Résumé</a>
       </div>
-    <div class="middle-container">
-  <div class="profile">
-    <img class="vaibhav" src="img/profile.png" alt="vaibhav-img">
-    <h2 class="Hello">Hello.</h2>
-    <p class="p2">I'm Vaibhav Singh, an experienced web developer proficient in HTML5, CSS3, JavaScript, React, and Java. With a strong track record of delivering high-quality solutions, let's collaborate to create impactful software solutions.</p>
-  </div>
-  <hr>
-  <div class="skills">
-    <h2>My Skills.</h2>
-    <div class="skill-row">
-      <h3>Front End</h3>
-      <img class="skill_img" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png" alt="HTML5">
-    	<img class="skill_img" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png" alt="CSS3">
-      <img class="skill_img" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" alt="javascript">
-    	<img class="skill_img" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png" alt="React">
-    		
-    </div>
-    <div class="skill-row">
-      <h3>Back End</h3>
-      <img class="skill_img" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nodejs/nodejs.png" alt="Node.Js">
-    	<img class="skill_img" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/java/java.png" alt="Java">
-    </div>
-    <div class="skill-row">
-      <h3>Database</h3>
-      <img class="skill_img" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mysql/mysql.png" alt="MySQL">
-    	<img class="skill_img" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mongodb/mongodb.png" alt="MongoDB">
-    </div>
-    <a class="btn" href="https://github.com/Vaibhav8997">MY PROJECT</a>
-  </div>
-  <hr>
-  <section id="contact">
-  <div class="contact-me">
-    <h2>Get In Touch</h2>
-    <h3>If you like my work or I can help.</h3>
-    <p class="p3">If you have a project that you want to get started, think you need my help with something or just fancy saying hey, then get in touch.</p>
-    <a class="btn" href="mailto:singhrisu2000@gmail.com">CONTACT ME</a>
-  </div>
-</div>
-</section>
+
+      <img class="hero-avatar" src="img/profile.png" alt="Vaibhav profile picture" />
+    </section>
+
+    <!-- About -->
+    <section class="section about" id="about" aria-label="About Vaibhav">
+      <div class="about-inner">
+        <div class="about-media">
+          <img src="img/profile.png" alt="Vaibhav photo" class="profile-pic" />
+        </div>
+        <div class="about-content">
+          <h2>About Me</h2>
+          <p>
+            I'm Vaibhav Singh, a developer who enjoys building clean, performant, and user-friendly products.
+            I work with <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, <strong>React</strong>,
+            and also backend with <strong>Go</strong> and <strong>Java</strong>. I love learning, shipping features, and collaborating on impactful projects.
+          </p>
+          <div class="about-links">
+            <a class="btn btn-primary" href="#contact">Hire Me</a>
+            <a class="btn btn-ghost" href="https://github.com/Vaibhav8997" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section skills" id="skills" aria-label="Skills">
+      <h2>Skills</h2>
+
+      <!-- Frontend -->
+      <h3>Frontend</h3>
+      <div class="skills-grid">
+        <div class="skill-card"><i class="fa-brands fa-html5" style="color:#e34c26"></i> HTML5</div>
+        <div class="skill-card"><i class="fa-brands fa-css3-alt" style="color:#264de4"></i> CSS3</div>
+        <div class="skill-card"><i class="fa-brands fa-js" style="color:#f7df1e"></i> JavaScript</div>
+        <div class="skill-card"><i class="fa-brands fa-react" style="color:#61dafb"></i> React</div>
+      </div>
+
+      <!-- Backend -->
+      <h3>Backend</h3>
+      <div class="skills-grid">
+        <div class="skill-card"><i class="fa-brands fa-node" style="color:#3c873a"></i> Node.js</div>
+        <div class="skill-card"><i class="fa-solid fa-g" style="color:#00add8"></i> Go</div>
+        <div class="skill-card"><i class="fa-brands fa-java" style="color:#f89820"></i> Java</div>
+      </div>
+
+      <!-- Databases -->
+      <h3>Databases</h3>
+      <div class="skills-grid">
+        <div class="skill-card"><i class="fa-solid fa-database" style="color:#00618a"></i> MySQL</div>
+        <div class="skill-card"><i class="fa-solid fa-leaf" style="color:#47a248"></i> MongoDB</div>
+      </div>
+
+      <!-- DevOps / Tools -->
+      <h3>DevOps / Tools</h3>
+      <div class="skills-grid">
+        <div class="skill-card"><i class="fa-brands fa-docker" style="color:#2496ed"></i> Docker</div>
+        <div class="skill-card"><i class="fa-solid fa-diagram-project" style="color:#326ce5"></i> Kubernetes</div>
+      </div>
+
+      <!-- operating system -->
+       <h3>Operating System</h3>
+       <div class="skills-grid">
+        <div class="skill-card"><i class="fa-brands fa-linux" style="color:#000"></i> Linux</div>
+        <div class="skill-card"><i class="fa-brands fa-windows" style="color:#0078d6"></i> Windows</div>
+       </div>
+    </section>
 
 
-<div class="bottom-container">
-  <div class="footer-div">
-    <a class="footer-link" href="https://www.linkedin.com/in/vaibhav7781/">LinkedIn</a>
-    <a class="footer-link" href="https://twitter.com/singh___vaibhav">Twitter</a>
-    <a class="footer-link" href="https://github.com/Vaibhav8997">GitHub</a>
-  </div>
-  <p class="copyright">© 2023 Vaibhav Singh.</p>
-</div>
+    <!-- Projects -->
+    <section class="section projects" id="projects" aria-label="Projects">
+      <h2>Projects</h2>
+
+      <div class="project-grid">
+        <!-- Project 1 -->
+        <article class="project-card">
+          <!-- <img src="img/project1.png" alt="Screenshot of Chat App" class="project-thumb" /> -->
+          <div class="project-body">
+            <h3>Chat App</h3>
+            <p>Real-time chat built with Go (WebSockets) & React. Authentication, rooms, and Dockerized setup.</p>
+            <div class="project-cta">
+              <a class="btn btn-sm" href="https://github.com/Vaibhav8997/Chat-Application-in-Go-with-ReactJS" target="_blank" rel="noopener noreferrer">Code</a>
+              <!-- <a class="btn btn-sm btn-outline" href="#" target="_blank" rel="noopener noreferrer">Live</a> -->
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card">
+          <!-- <img src="img/project2.png" alt="Screenshot of E-commerce project" class="project-thumb" /> -->
+          <div class="project-body">
+            <h3>E-commerce</h3>
+            <p>Clothing storefront with React frontend & Go backend, REST APIs, and JWT auth.</p>
+            <div class="project-cta">
+              <a class="btn btn-sm" href="https://github.com/Vaibhav8997" target="_blank" rel="noopener noreferrer">Code</a>
+              <!-- <a class="btn btn-sm btn-outline" href="#" target="_blank" rel="noopener noreferrer">Live</a> -->
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card">
+          <!-- <img src="img/project3.png" alt="Screenshot of Playing cards project" class="project-thumb" /> -->
+          <div class="project-body">
+            <h3>Playing Cards</h3>
+            <p>A simple project written in Golang to simulate a deck of playing cards.</p>
+            <div class="project-cta">
+              <a class="btn btn-sm" href="https://github.com/Vaibhav8997/playing_cards" target="_blank" rel="noopener noreferrer">Live</a>
+              <a class="btn btn-sm btn-outline" href="https://github.com/Vaibhav8997/Portfolio_Website" target="_blank" rel="noopener noreferrer">Code</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact" id="contact" aria-label="Contact">
+      <h2>Get In Touch</h2>
+      <p>If you have an idea, project, or just want to say hi — mail me.</p>
+      <a class="btn btn-primary" href="mailto:singhrisu2000@gmail.com">Email Me</a>
+
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/vaibhav7781/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://twitter.com/singh___vaibhav" target="_blank" rel="noopener noreferrer">Twitter</a>
+        <a href="https://github.com/Vaibhav8997" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" aria-label="Footer">
+    <p>© 2025 Vaibhav Singh</p>
+  </footer>
+
+  <!-- javascript for menu and dark mode -->
+  <script>
+    (function () {
+      const body = document.body;
+      const menuToggle = document.getElementById('menuToggle');
+      const navLinks = document.getElementById('navLinks');
+      const themeToggle = document.getElementById('themeToggle');
+
+      // Persisted theme
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme === 'dark') body.classList.add('dark');
+
+      // Menu toggle (mobile)
+      menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+      });
+
+      // Close nav on link click (mobile UX)
+      Array.from(document.querySelectorAll('.nav-link')).forEach(a => {
+        a.addEventListener('click', () => navLinks.classList.remove('active'));
+      });
+
+      // Theme toggle
+      function updateThemeIcon() {
+        themeToggle.textContent = body.classList.contains('dark') ? '☀️' : '🌙';
+      }
+      updateThemeIcon();
+
+      themeToggle.addEventListener('click', () => {
+        body.classList.toggle('dark');
+        localStorage.setItem('theme', body.classList.contains('dark') ? 'dark' : 'light');
+        updateThemeIcon();
+      });
+    })();
+  </script>
 </body>
 </html>
