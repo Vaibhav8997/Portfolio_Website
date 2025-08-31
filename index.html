@@ -17,10 +17,16 @@
 
   <!-- Styles -->
   <link rel="stylesheet" href="styles.css" />
+
+  <!-- Sweet alert for resume button-->
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+   <!-- Animate.css for animation -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
   <!-- Skip to content for accessibility -->
-  <a class="skip-link" href="#main">Skip to content</a>
+  <!-- <a class="skip-link" href="#main">Skip to content</a> -->
 
   <!-- Header / Navbar -->
   <header class="site-header" aria-label="Primary">
@@ -48,12 +54,14 @@
   <main id="main">
     <!-- Hero -->
     <section class="hero" id="home" aria-label="Intro">
-      <h1>Hi, I'm <span>Vaibhav Singh</span></h1>
-      <p class="subtitle">Full-stack Developer • Go • React • JavaScript</p>
+      <h1 class="hero-title">
+        <span class="typewriter">Hi, I'm Vaibhav Singh...</span>
+      </h1>
+      <p class="subtitle">Full-stack Developer • Building with Go & diving deeper into Concurrency</p>
 
       <div class="cta-group">
         <a class="btn btn-primary" href="#projects">View Projects</a>
-        <a class="btn btn-outline" href="https://drive.google.com/file/d/18Yx5YwutjKbiFhdfNIRJ-QXc1mNpiMFI/view" target="_blank" rel="noopener noreferrer">Download Résumé</a>
+        <a class="btn btn-outline" href="#" id="resumeBtn">Download Résumé</a>
       </div>
 
       <img class="hero-avatar" src="img/profile.png" alt="Vaibhav profile picture" />
@@ -113,7 +121,7 @@
       <div class="skills-grid">
         <div class="skill-card"><i class="fa-brands fa-docker" style="color:#2496ed"></i> Docker</div>
         <div class="skill-card"><i class="fa-solid fa-diagram-project" style="color:#326ce5"></i> Kubernetes</div>
-        <div class="skill-card"><i class="fa-brands fa-git-alt" style="color: #f14e32;"></i>Git and<i class="fa-brands fa-github" style="color: #1a1a1a;"></i> GitHub</div>
+        <div class="skill-card"><i class="fa-brands fa-git-alt" style="color: #f14e32;"></i> Git and<i class="fa-brands fa-github" style="color: #1a1a1a;"></i> GitHub</div>
       </div>
 
       <!-- operating system -->
@@ -121,6 +129,7 @@
        <div class="skills-grid">
         <div class="skill-card"><i class="fa-brands fa-linux" style="color:#000"></i> Linux</div>
         <div class="skill-card"><i class="fa-brands fa-windows" style="color:#0078d6"></i> Windows</div>
+        <div class="skill-card"><i class="fa-brands fa-apple" style="color: #888;"></i> MacOS</div>
        </div>
     </section>
 
@@ -224,6 +233,32 @@
         updateThemeIcon();
       });
     })();
+    // sweet aler js code
+    document.getElementById("resumeBtn").addEventListener("click", function (event) {
+    event.preventDefault();
+
+    Swal.fire({
+      title: '🚀 Resume Coming Soon!',
+      html: '<p style="font-size:16px; color:#ddd;">I’ll upload my resume on Google Drive soon.<br> Stay tuned and check back later!</p>',
+      icon: 'info',
+      background: '#1e293b', // dark background
+      color: '#f1f5f9',      // light text
+      iconColor: '#38bdf8',  // cyan icon
+      showClass: {
+        popup: 'animate__animated animate__fadeInDown'
+      },
+      hideClass: {
+        popup: 'animate__animated animate__fadeOutUp'
+      },
+      confirmButtonText: 'Got it 👍',
+      confirmButtonColor: '#6366f1', // gradient-like purple
+      customClass: {
+        title: 'swal2-title-custom',
+        popup: 'swal2-popup-custom',
+        confirmButton: 'swal2-confirm-custom'
+          }
+        });
+      });
   </script>
 </body>
 </html>
