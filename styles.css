@@ -294,16 +294,32 @@ body.dark-mode .skill-card img {
   overflow: hidden;
   border-right: none; /* no | cursor */
   width: 0;
+  max-width: 100%;
   animation: typing 3s steps(25, end) forwards; 
   /* sirf ek baar run karega */
 }
 
 @keyframes typing {
   from { width: 0; }
-  to   { width: 22ch; } /* adjust text length ke hisaab se */
+  to   { width: 100%; } /* adjust text length ke hisaab se */
 }
 
 /* Responsive */
+@media (max-width: 600px) {
+  .hero {
+    padding: 60px 5%;
+  }
+  .hero h1,
+  .hero-title {
+    font-size: clamp(1.5rem, 6vw, 2.2rem); 
+  }
+  .typewriter {
+    white-space: pre-wrap;
+    width: 100%;
+    animation: typing 3s steps(30, end) forwards;
+  }
+}
+
 @media (max-width: 900px) {
   .about-inner { grid-template-columns: 1fr; text-align: center; }
 }
